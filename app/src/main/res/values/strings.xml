@@ -1,0 +1,37 @@
+<!--<resources>-->
+<!--    <string name="app_name">My Application</string>-->
+<!--</resources>-->
+
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="Garbage_Manager">Garbage manager</string>
+    <string name="heading">Garbage Management</string>
+    <string name="description">Proper disposal of the waste in such a manner that it does not cause any damage to the environment.</string>
+    <string name="login">LogIn</string>
+    <string name="signup">SignUp</string>
+    <string name="user">Username</string>
+    <string name="pass">Password</string>
+    <string name="email">Email</string>
+    <string name="location">Location</string>
+    <string name="account">account?</string>
+    <string name="forget">Forget Password?</string>
+    <string name="image">image</string>
+    <string name="login_here">Already Registered? Log in here.</string>
+    <string name="create_account">Create new Account</string>
+    <string name="option1">Municipal Solid Waste (MSW):</string>
+    <string name="option2">Plastic Waste</string>
+    <string name="option3">Electronic Waste</string>
+    <string name="option4">Chemical waste</string>
+    <string name="firstPage">Select Waste Type</string>
+    <string name="description1">It includes everyday items like food waste, packaging materials, paper, plastic, glass, and non-hazardous household chemicals.</string>
+    <string name="description2">
+Plastic waste comprises discarded synthetic materials like bottles, bags, and packaging.
+    </string>
+    <string name="description3">
+E-waste consists of discarded electronic devices, such as computers, mobile phones, televisions, and appliances.
+    </string>
+    <string name="description4">hazardous materials discarded from industrial, commercial, or laboratory processes.</string>
+    <string name="select">Select Image</string>
+    <string name="upload">Upload Image</string>
+    <string name="image2">upload</string>
+</resources>
