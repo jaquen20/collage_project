@@ -58,7 +58,7 @@
                 android:autofillHints="name"
                 android:background="@drawable/custom_edittext"
                 android:drawablePadding="8dp"
-                android:hint="@string/user"
+                android:hint="@string/email"
                 android:inputType="text"
                 android:paddingLeft="8dp"
                 android:textColor="@color/black"
