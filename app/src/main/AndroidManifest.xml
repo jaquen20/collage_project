@@ -13,14 +13,12 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/Garbage_Manager"
         android:roundIcon="@mipmap/ic_launcher_adaptive_fore"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
-        <activity
-            android:name=".location"
-            android:exported="false" />
+
         <activity
             android:name=".activity_second_page"
             android:exported="false" />
@@ -34,10 +32,10 @@
             android:name=".LOGIN_activity"
             android:exported="false" />
         <activity
-            android:name=".splashScreen"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

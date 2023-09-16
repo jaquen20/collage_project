@@ -13,7 +13,7 @@
     <string name="pass">Password</string>
     <string name="email">Email</string>
     <string name="location">Location</string>
-    <string name="account">account?</string>
+    <string name="account">don\'t have an account?</string>
     <string name="forget">Forget Password?</string>
     <string name="image">image</string>
     <string name="login_here">Already Registered? Log in here.</string>

@@ -9,8 +9,8 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="410dp"
-        android:layout_height="733dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="#99D1C8E6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,45 +47,51 @@
         app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toStartOf="parent" />
 
+
     <Button
         android:id="@+id/selectImageButton"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_width="122dp"
+        android:layout_height="46dp"
         android:layout_marginTop="37dp"
         android:layout_marginBottom="284dp"
+        android:background="@drawable/rounded_corner"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
         android:text="@string/select"
         android:textColor="#FEFAFD"
-        android:background="@drawable/rounded_corner"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintHorizontal_bias="0.204"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.0" />
 
-
     <Button
         android:id="@+id/uploadButton"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_width="119dp"
+        android:layout_height="45dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="48dp"
 
 
         android:background="@drawable/rounded_corner"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
         android:text="@string/upload"
         android:textColor="#FEFAFD"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.809"
         app:layout_constraintStart_toEndOf="@+id/selectImageButton"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.007" />
 
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="305dp"
-        android:layout_height="49dp"
+        android:layout_width="292dp"
+        android:layout_height="39dp"
         android:layout_marginTop="144dp"
         android:autofillHints=""
         android:background="@drawable/custom_edittext"
@@ -95,25 +101,28 @@
         android:maxLength="@integer/material_motion_duration_short_2"
         android:paddingStart="10dp"
         android:textColor="#1B1818"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.switchmaterial.SwitchMaterial
-        android:layout_width="wrap_content"
         android:id="@+id/current"
+        android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginStart="58dp"
         android:checked="true"
         android:text="s"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/editTextText"
         app:layout_constraintStart_toStartOf="@+id/editTextText"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.717"
         tools:ignore="MissingConstraints" />
 
 

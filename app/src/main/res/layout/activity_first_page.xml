@@ -17,8 +17,8 @@
 
     <View
         android:id="@+id/view3"
-        android:layout_width="412dp"
-        android:layout_height="729dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="#99CDC2E8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,77 +30,55 @@
     <TextView
         android:id="@+id/textView4"
         android:layout_width="216dp"
-        android:layout_height="39dp"
+        android:layout_height="51dp"
+        android:gravity="clip_horizontal|center_horizontal|center_vertical"
         android:text="@string/firstPage"
         android:textColor="#3B1C73"
-        android:textSize="34sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/radio_group"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/backgroundImageView"
-        app:layout_constraintVertical_bias="0.755" />
+        app:layout_constraintVertical_bias="0.693" />
 
     <RadioGroup
         android:id="@+id/radio_group"
-        android:layout_width="385dp"
-        android:layout_height="506dp"
+        android:layout_width="351dp"
+        android:layout_height="426dp"
         android:layout_gravity="center"
         android:layout_marginTop="70dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.384"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.404">
+        app:layout_constraintVertical_bias="0.348">
 
         <RadioButton
             android:id="@+id/radioButton1"
             style="@style/CustomRadioButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:minHeight="48dp"
             android:layout_margin="8dp"
+            android:minHeight="48dp"
             android:padding="8dp"
             android:text="@string/option1"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/description1"
             android:layout_width="match_parent"
-            android:layout_height="58dp"
+            android:layout_height="66dp"
             android:layout_marginBottom="16dp"
             android:paddingStart="30dp"
             android:paddingEnd="40dp"
             android:text="@string/description1"
             android:textColor="#000000"
-            android:textSize="16sp" />
+            android:textSize="12sp" />
 
-        <RadioButton
-            android:id="@+id/radioButton2"
-            style="@style/CustomRadioButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:padding="8dp"
-            android:minHeight="48dp"
-            android:text="@string/option2"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/description2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:paddingStart="30dp"
-            android:paddingEnd="40dp"
-            android:text="@string/description2"
-            android:textColor="#000000"
-            android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/radioButton3"
@@ -111,7 +89,7 @@
             android:minHeight="48dp"
             android:padding="8dp"
             android:text="@string/option3"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <TextView
@@ -123,18 +101,18 @@
             android:paddingEnd="40dp"
             android:text="@string/description3"
             android:textColor="#000000"
-            android:textSize="16sp" />
+            android:textSize="12sp" />
 
         <RadioButton
             android:id="@+id/radioButton4"
             style="@style/CustomRadioButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:minHeight="49dp"
             android:layout_margin="8dp"
+            android:minHeight="49dp"
             android:padding="8dp"
             android:text="@string/option4"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <TextView
@@ -145,7 +123,7 @@
             android:paddingEnd="10dp"
             android:text="@string/description4"
             android:textColor="#000000"
-            android:textSize="16sp" />
+            android:textSize="12sp" />
 
     </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>
