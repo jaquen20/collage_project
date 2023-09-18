@@ -34,4 +34,30 @@ E-waste consists of discarded electronic devices, such as computers, mobile phon
     <string name="select">Select Image</string>
     <string name="upload">Upload Image</string>
     <string name="image2">upload</string>
+
+    <string name="enter_password">Enter password</string>
+
+    <string name="enter_youe_email">Enter your Email</string>
+
+    <string name="logout">Logout</string>
+
+
+    <string name="full_name">full name</string>
+
+    <string name="password">password</string>
+    <string name="phone">enter phone no</string>
+    <string name="city">enter city </string>
+    <string name="register">Register</string>
+    <string name="input_error_name">name required</string>
+    <string name="input_error_email">email required</string>
+    <string name="input_error_password">password required</string>
+    <string name="input_error_phone">phone required</string>
+    <string name="input_error_password_length">password should be atleast 6 characters long</string>
+    <string name="input_error_phone_invalid">enter a valid phone number</string>
+    <string name="homepage">KACHRA WALA</string>
+    <string name="REPORT">REPORT TRASH</string>
+    <string name="HOME">pavilion</string>
+    <string name="registration_success">Registered Successfully</string>
+    <string name="input_error_email_invalid">enter a valid email</string>
+    <string name="next">NEXT</string>
 </resources>
