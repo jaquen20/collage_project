@@ -2,11 +2,11 @@ package com.example.myapplication;
 
 
 
-public class imageData {
-    private String imageURL, caption;
+public class imageData{
+    private String imageURL;
 
-    public imageData(){
-
+    public imageData(String toString) {
+        this.imageURL = toString;
     }
 
     public String getImageURL() {
@@ -17,16 +17,10 @@ public class imageData {
         this.imageURL = imageURL;
     }
 
-    public String getCaption() {
-        return caption;
-    }
-
-    public void setCaption(String caption) {
-        this.caption = caption;
-    }
-
-    public imageData(String imageURL, String caption) {
-        this.imageURL = imageURL;
-        this.caption = caption;
+    @Override
+    public String toString() {
+        return "imageData{" +
+                "imageURL='" + imageURL + '\'' +
+                '}';
     }
 }
