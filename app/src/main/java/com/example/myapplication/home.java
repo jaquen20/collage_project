@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -22,6 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class home extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
+
     DatabaseReference db;
     private TextView name;
     private TextView email;
@@ -31,7 +33,7 @@ public class home extends AppCompatActivity {
 private String userID;
 FirebaseUser firebaseUser;
     private Button report;
-    private Button previous;
+    private Button contribution;
     private Button logout;
 
     @SuppressLint("MissingInflatedId")
@@ -46,22 +48,10 @@ FirebaseUser firebaseUser;
         phone=findViewById(R.id.show_mobile);
         city=findViewById(R.id.show_city);
         report=findViewById(R.id.report_trash);
-        previous=findViewById(R.id.see_reports);
+        contribution=findViewById(R.id.see_reports);
         logout=findViewById(R.id.logout_button);
+        auth=FirebaseAuth.getInstance();
 
-
-
-//        Intent intent = getIntent();
-//        String username = intent.getStringExtra("name");
-//        String mail = intent.getStringExtra("mail");
-//        String CT=intent.getStringExtra("pl");
-//        String phon=intent.getStringExtra("phoneno");
-//        Integer hf=intent.getIntExtra("phoneno",0);
-//        String rref=intent.getStringExtra("id");
-//        name.setText(username);
-//        email.setText(mail);
-//        phone.setText(phon);
-//        city.setText(CT);
 
 
         FirebaseDatabase firebaseDatabase=FirebaseDatabase.getInstance();
@@ -74,10 +64,6 @@ FirebaseUser firebaseUser;
                 User userProfile=snapshot.getValue(User.class);
                 if (userProfile!=null){
                     Toast.makeText(home.this, "welcome", Toast.LENGTH_SHORT).show();
-//                    String N=snapshot.child(userID).child("name").getValue(String.class);
-//                    String M=snapshot.child(userID).child("email").getValue(String.class);
-//                    String C=snapshot.child(userID).child("city").getValue(String.class);
-//                    String P=snapshot.child(userID).child("phone").getValue(String.class);
                     name.setText(userProfile.getName());
                     email.setText(userProfile.getEmail());
                     phone.setText(userProfile.getPhone());
@@ -110,13 +96,13 @@ FirebaseUser firebaseUser;
         report.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent=new Intent(getApplicationContext(), activity_second_page.class);
-//                intent.putExtra("id",rref);
-                startActivity(new Intent(home.this,activity_second_page.class));
+                Intent intent = new Intent(home.this, secondPage.class);
+
+                startActivity(intent);
             }
         });
 
-        previous.setOnClickListener(new View.OnClickListener() {
+        contribution.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(home.this,ImageLayout.class));

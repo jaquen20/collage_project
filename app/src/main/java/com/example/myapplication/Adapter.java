@@ -17,14 +17,20 @@ import java.util.List;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.MyView> {
      private  Context context;
+    private List<String> imageUrls;
 
-    private final List<garbageclass> list;
+  //  private final List<garbageClass> list;
 
-    public Adapter(Context context,List<garbageclass> list) {
-        this.list = list;
-        this.context=context;
-    }
 
+
+//    public Adapter(Context context,List<garbageClass> list) {
+//        this.list = list;
+//        this.context=context;
+//    }
+public Adapter(Context context,List<String> imageUrls) {
+    this.imageUrls = imageUrls;
+    this.context=context;
+}
 
     public class MyView extends RecyclerView.ViewHolder {
         AppCompatImageView image;
@@ -41,27 +47,25 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyView> {
         }
     }
 
-    // Override onCreateViewHolder which deals
-    // with the inflation of the card layout
-    // as an item for the RecyclerView.
     @Override
     public MyView onCreateViewHolder(ViewGroup parent, int viewType) {
-        // Inflate item.xml using LayoutInflater
+
         View itemView = LayoutInflater.from(context)
                 .inflate(R.layout.recyclerview, parent, false);
-        // return itemView
+
         return new MyView(itemView);
     }
 
     @Override
     public void onBindViewHolder(final MyView holder, final int position) {
-        final garbageclass currentItem = list.get(position);
-        //holder.add.setText(currentItem.getAddress());
-        //holder.uname.setText(currentItem.getuName());
-        Glide.with(context).load(list.get(position).getImageUrl()).into(holder.image);
-//                .load(currentItem.getImageUrl())
-//                .fitCenter()
-//                .into(holder.image);
+        String imageUrl = imageUrls.get(position);
+        Glide.with(context).load(imageUrl).into(holder.image);
+        //final garbageClass currentItem = list.get(position);
+
+       // holder.add.setText(currentItem.getAddress());
+       // holder.uname.setText(currentItem.getuName());
+        //Glide.with(context).load(currentItem).into(holder.image);
+
 
         holder.btnMap.setOnClickListener(view -> {
             Uri mapUri = Uri.parse("https://www.google.com/maps/search/?api=1&query=");
@@ -69,12 +73,11 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyView> {
             view.getContext().startActivity(intent);
         });
     }
-
-    // Override getItemCount which Returns
-    // the length of the RecyclerView.
     @Override
     public int getItemCount() {
-        return list.size();
+        //return list.size();
+        return imageUrls.size();
     }
+
 }
 

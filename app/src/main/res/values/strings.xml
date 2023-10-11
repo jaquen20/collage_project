@@ -60,4 +60,6 @@ E-waste consists of discarded electronic devices, such as computers, mobile phon
     <string name="registration_success">Registered Successfully</string>
     <string name="input_error_email_invalid">enter a valid email</string>
     <string name="next">NEXT</string>
+    <string name="contribution">contribution</string>
+    <string name="contribution1">contribution</string>
 </resources>
